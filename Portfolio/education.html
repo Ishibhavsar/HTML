@@ -1,45 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Education-Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Education - Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: #34495e;
+      color: #ecf0f1;
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+
+    header {
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    h1 {
+      color: #f1c40f;
+      text-decoration: underline;
+      font-size: 2.5rem;
+    }
+
+    .edu-section {
+      background-color: #2c3e50;
+      padding: 20px;
+      margin: 20px auto;
+      border-radius: 10px;
+      max-width: 800px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    .edu-section h2 {
+      color: #1abc9c;
+      margin-bottom: 10px;
+    }
+
+    .edu-section h3, .edu-section h4, .edu-section p {
+      color: #ecf0f1;
+      margin: 5px 0;
+    }
+
+    .edu-section a {
+      color: #f39c12;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .edu-section a:hover {
+      color: #e67e22;
+    }
+  </style>
 </head>
-<body style="background-color: #34495e;color: #ecf0f1;">
-    <header>
-        <center>
-            <h1 style="color: #f1c40f">
-                <u>Education</u>
-            </h1>
-        </center>
-    </header>
-    <br>
-    <p>
-        <h2 style="color: #3498db;">Secondary School Certificate (10th Grade)</h2>
-        <h3 style="color: #3498db;">Rajasthan Board of Secondary Education</h3>
-            <p style="color: #3498db;">Year of Completion: 2021</p>
-            <p style="color: #3498db;">Percentage: 98.00%</p>
-            <a href="Education/ishi 10th marksheet .pdf" style="color: #1abc9c;">Click here to view marksheet</a>
-    </p>
-    <br>
-    <p>
-        <h2 style="color: #3498db;"> Senior Secondary School Certificate (12th Grade)</h2>
-        <h3 style="color: #3498db;">Central Board of Secondary Education</h3>
-            <p style="color: #3498db;">Year of Completion: 2023</p>
-            <p style="color: #3498db;">Percentage: 72.00%</p>
-            <a href="Education/12th marksheet.pdf" style="color: #1abc9c;">Click here to view marksheet</a>
-    </p>
-    <br>
-    <p>
-        <h2 style="color: #3498db;"> Pursuing B.Tech.</h2>
-        <h3 style="color: #3498db;">Techno India NJR Institute of Technology, Udaipur</h3>
-        <h4 style="color: #3498db;">Rajasthan Technical University, Kota</h4>
-            <p style="color: #3498db;">Computer Science and Engineering</p>
-            <p style="color: #3498db;">I Sem(CGPA): 8.95</p>
-            <a href="Education/1st sem marksheet.pdf" style="color: #1abc9c;">Click here to view marksheet</a>
-        <br>
-            <p style="color: #3498db;">II Sem(CGPA): 8.76</p>
-            <a href="Education/II sem marksheet.pdf" style="color: #1abc9c;">Click here to view marksheet</a>
-    </p>
+<body>
+
+  <header>
+    <h1>🎓 Education</h1>
+  </header>
+
+  <div class="edu-section">
+    <h2>Secondary School Certificate (10th Grade)</h2>
+    <h3>Rajasthan Board of Secondary Education</h3>
+    <p>Year of Completion: 2021</p>
+    <p>Percentage: 98.00%</p>
+    <p><a href="Education/ishi 10th marksheet .pdf" target="_blank">📄 View Marksheet</a></p>
+  </div>
+
+  <div class="edu-section">
+    <h2>Senior Secondary School Certificate (12th Grade)</h2>
+    <h3>Central Board of Secondary Education</h3>
+    <p>Year of Completion: 2023</p>
+    <p>Percentage: 72.00%</p>
+    <p><a href="Education/12th marksheet.pdf" target="_blank">📄 View Marksheet</a></p>
+  </div>
+
+  <div class="edu-section">
+    <h2>Pursuing B.Tech.</h2>
+    <h3>Techno India NJR Institute of Technology, Udaipur</h3>
+    <h4>Rajasthan Technical University, Kota</h4>
+    <p>Branch: Computer Science and Engineering</p>
+    <p>I Sem CGPA: 8.95 — <a href="Education/1st sem marksheet.pdf" target="_blank">📄 View Marksheet</a></p>
+    <p>II Sem CGPA: 8.76 — <a href="Education/II sem marksheet.pdf" target="_blank">📄 View Marksheet</a></p>
+  </div>
+
 </body>
 </html>

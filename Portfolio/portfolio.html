@@ -1,45 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IshiBhavsar-PORTFOLIO</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ishi Bhavsar - Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #2c3e50;
+      color: #ecf0f1;
+    }
+
+    header, footer {
+      text-align: center;
+      padding: 20px;
+    }
+
+    h1 {
+      text-decoration: underline;
+      font-size: 2.5rem;
+    }
+
+    h2, h3, h4 {
+      margin: 10px 0;
+    }
+
+    nav {
+      background-color: #34495e;
+      padding: 15px 0;
+      text-align: center;
+    }
+
+    nav a {
+      margin: 0 15px;
+      color: #f1c40f;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #1abc9c;
+    }
+
+    .intro {
+      text-align: center;
+      padding: 30px 20px;
+    }
+
+    .intro h2 {
+      color: #1abc9c;
+      font-size: 1.8rem;
+    }
+
+    .intro p {
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+
+    footer {
+      background-color: #1a252f;
+      padding: 30px 20px;
+      margin-top: 40px;
+    }
+
+    .social-icons a {
+      color: #ecf0f1;
+      margin: 0 10px;
+      font-size: 1.4rem;
+      transition: color 0.3s;
+    }
+
+    .social-icons a:hover {
+      color: #1abc9c;
+    }
+
+    @media (max-width: 600px) {
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
+    }
+  </style>
 </head>
-<body style="background-color:#2c3e50; color :#ecf0f1">
-    <header>
-        <center>
-            <h1><u>*Welcome to my portfolio*</u></h1>
-        </center> 
-    </header>
-    <br>
-    <nav>
-        <h2 style="color:#ecf0f1">
-            <center>
-                <a href = "about.html">About me</a>|
-                <a href = "education.html">Education</a>|
-                <a href ="contact.html">Contact</a>|
-                <a href ="certification.html">Certificate</a>
-            </center>
-        </h2>
-    </nav>
-<br>
-    <h2 style="color: #1abc9c">
-        <center>
-            <b>HeY!</b>, It's Ishi Bhavsar here🌱🚀
-        </center>
-    </h2>
-    <br>
-    <center>
-        <p><b>Exploring UI/UX Design🎨 & Machine Learning📊</b></p>
-    </center>
-    <br>
-    <footer>
-        <center>
-            <h3 style="color: #ecf0f1">Thank you for visiting my portfolio! Feel free to reach out if you have any questions or opportunities.</h3>
-            <h4 style="color: #ecf0f1">© 2023 Ishi Bhavsar. All rights reserved.</h4>
-            <h4 style="color: #ecf0f1">Designed with ❤️ by Ishi Bhavsar</h4>
-            <h4 style="color: #ecf0f1">Follow me on social media for updates!</h4>
-        </center>
-    </footer>   
+<body>
+
+  <header>
+    <h1>✨ Welcome to My Portfolio ✨</h1>
+  </header>
+
+  <section class="intro">
+    <h2>HeY! It's Ishi Bhavsar here 🌱🚀</h2>
+    <p>Exploring UI/UX Design 🎨 & Machine Learning 📊</p>
+  </section>
+
+  <nav>
+    <a href="about.html">About Me</a>
+    <a href="education.html">Education</a>
+    <a href="contact.html">Contact</a>
+    <a href="certification.html">Certificates</a>
+  </nav>
+
+  <footer>
+    <h3>Thank you for visiting my portfolio!</h3>
+    <p>Feel free to reach out if you have any questions or opportunities.</p>
+    <p>&copy; <span id="year"></span> Ishi Bhavsar. All rights reserved.</p>
+    <p>Designed with ❤️ by Ishi Bhavsar</p>
+    <p>Follow me on social media for updates:</p>
+    <div class="social-icons">
+      <a href="https://github.com/Ishibhavsar" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/ishi-bhavsar/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="mailto:ishibhavsar41@gmail.com"><i class="fas fa-envelope"></i></a>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
 </body>
 </html>
