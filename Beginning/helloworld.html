@@ -34,5 +34,22 @@
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
     </style>
+
+    <div class="container">
+        <h1>Hello, World!</h1>
+        <p>Welcome to my first HTML page.</p>
+        <p>Feel free to explore and modify this code.</p>
+        <a href="https://www.w3schools.com/html/">Learn more about HTML</a>
+    </div>
+    <script>
+        console.log("Hello, World! This is a simple HTML page.");
+        document.querySelector('h1').addEventListener('click', function() {
+            alert('You clicked the heading!');
+        });
+        document.querySelector('a').addEventListener('click', function(event) {
+            event.preventDefault();
+            alert('This link is a placeholder. Explore HTML tutorials online!');
+        });
+    </script>
 </head>
 </html>
