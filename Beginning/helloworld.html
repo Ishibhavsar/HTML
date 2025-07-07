@@ -79,5 +79,148 @@
             console.log('Page is being unloaded.');
         });
     </script>
+    <footer>
+        <p>&copy; 2025 Ishi</p>
+    </footer>
+    <style>
+        footer {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #777;
+        }
+        footer p {
+            margin: 0;
+        }
+        footer a {
+            color: #2196F3;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <script>
+        console.log('Footer script loaded.');
+        document.querySelector('footer').addEventListener('click', function() {
+            alert('Footer clicked!');
+        });
+        document.querySelector('footer a').addEventListener('click', function(event) {
+            event.preventDefault();
+            alert('This is a placeholder link in the footer.');
+        });
+        document.querySelector('footer p').addEventListener('mouseover', function() {
+            this.style.color = '#FF5722';
+        });
+        document.querySelector('footer p').addEventListener('mouseout', function() {
+            this.style.color = '#777';
+        });
+        window.addEventListener('hashchange', function() {
+            console.log('Hash changed to: ' + window.location.hash);
+        });
+        window.addEventListener('popstate', function(event) {
+            console.log('Popstate event triggered. State: ', event.state);
+        });
+        window.addEventListener('storage', function(event) {
+            console.log('Storage event: Key = ' + event.key + ', Old Value = ' + event.oldValue + ', New Value = ' + event.newValue);
+        });
+        window.addEventListener('online', function() {
+            console.log('You are online.');
+        });
+        window.addEventListener('offline', function() {
+            console.log('You are offline.');
+        });
+        window.addEventListener('focus', function() {
+            console.log('Window is focused.');
+        }); 
+        window.addEventListener('blur', function() {
+            console.log('Window is blurred.');
+        });
+        window.addEventListener('contextmenu', function(event) {
+            event.preventDefault();
+            alert('Right-click is disabled on this page.');
+        });
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('DOM fully loaded and parsed.');
+        });
+        document.addEventListener('visibilitychange', function() {
+            if (document.visibilityState === 'hidden') {
+                console.log('Page is hidden.');
+            } else {
+                console.log('Page is visible.');
+            }
+        });
+        document.addEventListener('click', function(event) {
+            console.log('Document clicked at: ' + event.clientX + ', ' + event.clientY);
+        });
+        document.addEventListener('dblclick', function(event) {
+            console.log('Document double-clicked at: ' + event.clientX + ', ' + event.clientY);
+        });
+        document.addEventListener('mousemove', function(event) {
+            console.log('Mouse moved to: ' + event.clientX + ', ' + event.clientY);
+        });
+        document.addEventListener('wheel', function(event) {
+            console.log('Mouse wheel scrolled. DeltaY: ' + event.deltaY);
+        });
+        document.addEventListener('touchstart', function(event) {
+            console.log('Touch started at: ' + event.touches[0].clientX + ', ' + event.touches[0].clientY);
+        });
+
+        document.addEventListener('touchmove', function(event) {
+            console.log('Touch moved to: ' + event.touches[0].clientX + ', ' + event.touches[0].clientY);
+        }); 
+        document.addEventListener('touchend', function(event) {
+            console.log('Touch ended.');
+        });
+        document.addEventListener('touchcancel', function(event) {
+            console.log('Touch canceled.');
+        });
+        document.addEventListener('keydown', function(event) {
+            console.log('Key down: ' + event.key);
+        });
+        document.addEventListener('keyup', function(event) {
+            console.log('Key up: ' + event.key);
+        });
+        document.addEventListener('keypress', function(event) {
+            console.log('Key pressed: ' + event.key);
+        });
+        document.addEventListener('input', function(event) {
+            console.log('Input event on: ' + event.target.tagName);
+        });
+        document.addEventListener('change', function(event) {
+            console.log('Change event on: ' + event.target.tagName);
+        });
+        document.addEventListener('submit', function(event) {
+            event.preventDefault();
+            console.log('Form submitted.');
+        });
+        document.addEventListener('reset', function(event) {
+            console.log('Form reset.');
+        });
+        document.addEventListener('focusin', function(event) {
+            console.log('Focus in on: ' + event.target.tagName);
+        });
+        document.addEventListener('focusout', function(event) {
+            console.log('Focus out from: ' + event.target.tagName);
+        });
+        document.addEventListener('dragstart', function(event) {
+            console.log('Drag started on: ' + event.target.tagName);
+        });
+        document.addEventListener('drag', function(event) {
+            console.log('Dragging: ' + event.target.tagName);
+        });
+        document.addEventListener('dragend', function(event) {
+            console.log('Drag ended on: ' + event.target.tagName);
+        });
+        document.addEventListener('dragenter', function(event) {
+            console.log('Drag entered on: ' + event.target.tagName);
+        });
+        document.addEventListener('dragover', function(event) {
+            event.preventDefault();
+            console.log('Dragging over: ' + event.target.tagName);
+        });
+
+        document.addEventListener('dragleave', function(event) {
+            console.log('Drag left from: ' + event.target.tagName);
+        });
+        </script>
 </body>
 </html>
